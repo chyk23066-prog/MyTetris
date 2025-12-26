@@ -344,5 +344,22 @@ class Renderer{ //描画処理
     
         pop();
     }
+
+    drawGameUI(game) {
+        if (!game) return;
+    
+        // NEXT
+        this.drawNextFrame();
+        this.drawNext(game.next);
+    
+        // HOLD
+        this.drawHoldFrame();
+        this.drawHold(game.hold);
+    
+        // SCORE
+        this.drawScoreFrame();
+        this.drawScore(game.scoreManager);
+    }
+    
     
 }
