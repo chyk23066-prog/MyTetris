@@ -361,5 +361,4 @@ class Renderer{ //描画処理
         this.drawScore(game.scoreManager);
     }
     
-    
 }
